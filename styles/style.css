@@ -1,0 +1,28 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* common styles and utiliteis */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header style */
+.font {
+    color: white;
+}
+
+.box {
+    width: 130px;
+    height: 40px;
+    background-color: red;
+    border-radius: 3px;
+
+}
+
+section {
+    position: relative;
+    display: flex;
+    background-color: black;
+    background-repeat: no-repeat;
+    padding: 30px;
+}

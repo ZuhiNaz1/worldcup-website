@@ -90,8 +90,8 @@ body {
 
 /*Footer Style*/
 .footer-container {
-    width: 1400px;
-    height: 250px;
+    width: 1500px;
+    height: 400px;
     background-color: #161616;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -104,7 +104,14 @@ body {
 
 .footer-last {
     color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    color: blue;
+    visibility: hidden;
 }
 
 /* Media Quries*/
@@ -136,10 +143,14 @@ body {
 @media only screen and (max-width:688px) {
 
     .blog,
-    .footer {
+    .footer,
+    .footer-last {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
         margin: (0, auto);
     }
 
+    .social-media {
+        visibility: visible;
+    }
 }

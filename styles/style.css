@@ -4,6 +4,13 @@
 /* Common Styles and Utiliteis */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.container {
+    background-color: white;
+    width: 312px;
+    height: 312px;
 }
 
 /* Header Style */
@@ -20,11 +27,15 @@ body {
 }
 
 .player {
+    width: 1321px;
+    height: 646px;
     position: relative;
-    display: flex;
+    border-radius: 10px;
     background-color: black;
     background-repeat: no-repeat;
-    padding: 30px;
+    padding: 30px 30px;
+    left: 130px;
+
 }
 
 /* Main Style */
@@ -32,14 +43,103 @@ body {
     display: grid;
 }
 
+.boxes {
+    width: 252px;
+    height: 252px;
+    border-radius: 5px;
+
+
+}
+
+.blogs {
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+
 .blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    left: 130px;
+    gap: 3px;
+
+}
+
+.transfer-box {
+    border: 1px solid black;
+    background-color: white;
+    width: 67px;
+    height: 24px;
+
 }
 
 .blog img {
     width: 312px;
     height: 175px;
 
+
+}
+
+.view-all {
+    font: white;
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+    visibility: hidden;
+}
+
+/*Footer Style*/
+.footer-container {
+    width: 1400px;
+    height: 250px;
+    background-color: #161616;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+}
+
+.footer-last {
+    color: white;
+    text-align: center;
+}
+
+/* Media Quries*/
+
+/* Tablet Devices */
+
+@media only screen and(min-width:688px) and(max-width:992px) {
+    .blog {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .blogs {
+        display: flex;
+    }
+
+    .view-all {
+        font: white;
+        background-color: red;
+        border-radius: 5px;
+        text-align: center;
+        visibility: visible;
+    }
+}
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+
+    .blog,
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        margin: (0, auto);
+    }
 
 }
